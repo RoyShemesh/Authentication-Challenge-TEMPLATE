@@ -1,0 +1,54 @@
+POST http://localhost:8080/user/register
+Content-Type: application/json
+
+{
+    "email":"ro2y@gmail",
+    "user":"roy2",
+    "password":"123"
+}
+###
+POST http://localhost:8080/user/login
+Content-Type: application/json
+
+{
+    "email":"ro2y@gmail",
+    "user":"roy2",
+    "password":"123"
+}
+###
+POST http://localhost:8080/user/login
+Content-Type: application/json
+
+{
+    "email":"admin@email.com",
+    "user":"admin",
+    "password":"Rc123456"
+}
+###
+POST http://localhost:8080/user/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.cm95Mg._4fPdcR8ZLs9i8sJowiGZRlauVaxfX8HicYkCjNyihY"
+}
+###
+POST http://localhost:8080/user/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.cm95Mg._4fPdcR8ZLs9i8sJowiGZRlauVaxfX8HicYkCjNyihY"
+}
+###
+POST http://localhost:8080/user/tokenvalidate
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoicm95MiIsImlhdCI6MTYzODMxMDE4NywiZXhwIjoxNjM4MzEwMjAyfQ.1RzncCbHf85zvW8nImzMAur3DLLR_JXt096P-fTeioI
+###
+GET http://localhost:8080/api/v1/information
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoicm95MiIsImlhdCI6MTYzODMxMjI2NCwiZXhwIjoxNjM4MzEyMjc5fQ.6KfWcTtCepPlEPoWo4x_yVArXlRyGc0kZIpdHaIfxOY
+###
+
+GET http://localhost:8080/api/v1/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MzgzNTYyNzF9.915ne60N4DmuGDvdeUWz3t8AgzqpJv115ihGPohkt2I
+
+###
+OPTIONS  http://localhost:8080/
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoicm95MiIsImlhdCI6MTYzODM2MjQzNX0.M1sFb5tySRv-2sD86PHI3KN1zLw0doThXr05i0-_8Kk
